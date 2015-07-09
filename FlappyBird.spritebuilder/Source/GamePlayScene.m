@@ -17,5 +17,9 @@
 }
 
 // put new methods here
+-(void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    //This will get called when the player touches the screen
+    [character flap];
+}
 
 @end
