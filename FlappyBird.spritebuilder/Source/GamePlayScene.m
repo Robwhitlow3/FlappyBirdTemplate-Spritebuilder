@@ -16,6 +16,7 @@
 -(void)update:(CCTime)delta
 {
     // put update code here
+    timeSinceObstacle += delta;
     if(timeSinceObstacle > 2.0f) {
         [self addObstacle];
         timeSinceObstacle = 0.0f;
